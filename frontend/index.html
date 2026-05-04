@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,10 @@
 <body>
   <canvas id="bg"></canvas>
 
-  <div id="loading">Caricamento progetti...</div>
-
+  <!-- Project panel -->
   <div id="panel" class="hidden">
     <button id="close-btn">✕</button>
-    <div id="panel-tag">PROGETTO</div>
+    <div id="panel-tag">PROJECT</div>
     <h2 id="panel-title"></h2>
     <p id="panel-desc"></p>
     <a id="panel-link" href="#" target="_blank" rel="noopener">
@@ -27,13 +26,17 @@
           .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
           0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
       </svg>
-      Apri su GitHub
+      <span id="github-btn-text">Open on GitHub</span>
     </a>
   </div>
 
-  <div id="hint">&#x2193; clicca su un'isola per esplorare</div>
+  <!-- Language toggle -->
+  <button id="lang-btn">IT</button>
+
+  <!-- Hint bar -->
+  <div id="hint">Arrow keys = sail · get close to an island</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
